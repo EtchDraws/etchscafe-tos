@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Etch's Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/hipster-outline-2/60/007_-_Coffee_Cup-512.png">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+ <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+<div class="w3-bottom">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-ripple w3-indigo w3-border w3-border-black">HOME</a> 
+     
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-dark-grey w3-border w3-border-yellow">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-dark-grey w3-border w3-border-yellow">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black w3-border w3-border-yellow">CONTACT</a>
+      </div>
+      <div class="w3-col s3">
+      <a href="#price" class="w3-button w3-block w3-black w3-border w3-border-yellow">PRICES & TIMES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#tos" class="w3-button w3-block w3-black w3-border w3-border-yellow">TOS</a>
+      </div>
+    <div class="w3-col s3">
+      <a href="#faq" class="w3-button w3-block w3-black w3-border w3-border-yellow">FAQ</a>
+      </div>
+    <div class="w3-col s3">
+      <a href="#gallery" class="w3-button w3-block w3-black w3-border w3-border-yellow">GALLERY</a>
+    </div>
+    
+  </div>
+</div>
+  <div class="w3-2018-coconut-milk w3-grayscale w3-large">
+   </div>
+  <div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48 w3-hover-grey"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-black">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Characters');" id="myLink">
+        <div class="w3-col s6 tablink w3-hover-sand">Characters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'PreMade');">
+        <div class="w3-col s6 tablink w3-hover-sand">PreMade</div>
+      </a>
+    </div>
+
+    <div id="Characters" class="w3-container menu w3-padding-48 w3-card w3-light-grey">
+     <h5>Custom Background +$6</h5>
+     <h5>Shadow effects +$4</h5>
+      <h5>Headshot</h5>
+      <p class="w3-text-grey">Non colored character headshot $5.50</p><br>
+    
+      <h5>Colored Headshot</h5>
+      <p class="w3-text-grey">A character headshot but with color! $7.00</p><br>
+    
+      <h5>Colored Headshot + accessory</h5>
+      <p class="w3-text-grey">A colored character headshot with accessory $7.50</p><br>
+    
+      <h5>Full character</h5>
+      <p class="w3-text-grey">A full character drawn with no color $10.50</p><br>
+    
+      <h5>Full character colored</h5>
+      <p class="w3-text-grey">A full colored character $14.50</p>
+    </div>
+
+    <div id="PreMade" class="w3-container menu w3-padding-48 w3-card w3-light-grey">
+      <h5>PreMade Character ref sheet</h5>
+      <p class="w3-text-grey">A premade character base, free to color and change. Do not remove credit. $2.50</p><br>
+    
+      <h5>PreMade cartoon character</h5>
+      <p class="w3-text-grey">A premade cartoon styled little character base $4.50</p><br>
+    
+      <h5>PreMade cartoon headshot</h5>
+      <p class="w3-text-grey">A premade cartoon styled character headshot base $3.00</p><br>
+    
+      <h5>PreMade cartoon emojis</h5>
+      <p class="w3-text-grey">A premade cartoon style emoji set base for emojis, discord, messaging, and more! $3.00</p><br>
+    
+      <h5>PreMade pfp</h5>
+      <p class="w3-text-grey">A premade profile picture base, do not remove small credit that is only visible when zoomed.  $2.50</p>
+    </div>  
+    <img src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
