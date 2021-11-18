@@ -19,6 +19,15 @@ body, html {
   .menu {
   display: none;
 }
+  df-messenger {
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #4c0a8f;
+   --df-messenger-chat-background-color: #b974d6;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #dfb1f2;
+   --df-messenger-user-message: #de41e0;
+  }
+
  .bgimg {
   background-position: center;
   background-size: cover;
@@ -117,9 +126,14 @@ I do not work on deadlines unless it is a rush commission..</p>
   </div>
 </div>
  <footer class="w3-center w3-black w3-padding-48 w3-large">
-  <a href="https://www.youtube.com/channel/UCIR8IQCNussEFitmLSsLckg">Thank you for looking. Use the link to my channel I don't use!</a>
- <a href="#">Also check out my other website!</a>
- <p>.</p>
+ <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_information-512.png"
+  intent="openintent"
+  chat-title="Hope"
+  agent-id="b1d2f039-0e00-4c36-9901-81716d010cb8"
+  language-code="en"
+></df-messenger>
 </footer>
   </body>
 </html>
